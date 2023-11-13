@@ -64,10 +64,11 @@ All URIs are relative to *http://localhost*
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 [*ShoppingBasketApi*](doc/ShoppingBasketApi.md) | [**shoppingBasketCheckoutAndGetNewBasket**](doc/ShoppingBasketApi.md#shoppingbasketcheckoutandgetnewbasket) | **POST** /api/app/shopping-basket/checkout-and-get-new-basket | 
+[*ShoppingBasketApi*](doc/ShoppingBasketApi.md) | [**shoppingBasketClearBasket**](doc/ShoppingBasketApi.md#shoppingbasketclearbasket) | **POST** /api/app/shopping-basket/clear-basket | 
 [*ShoppingBasketApi*](doc/ShoppingBasketApi.md) | [**shoppingBasketCreateBasketItem**](doc/ShoppingBasketApi.md#shoppingbasketcreatebasketitem) | **POST** /api/app/shopping-basket/basket-item | 
 [*ShoppingBasketApi*](doc/ShoppingBasketApi.md) | [**shoppingBasketDeleteBasketItem**](doc/ShoppingBasketApi.md#shoppingbasketdeletebasketitem) | **DELETE** /api/app/shopping-basket/basket-item/{basketItemId} | 
 [*ShoppingBasketApi*](doc/ShoppingBasketApi.md) | [**shoppingBasketGetBasket**](doc/ShoppingBasketApi.md#shoppingbasketgetbasket) | **GET** /api/app/shopping-basket/basket | 
-[*StockApi*](doc/StockApi.md) | [**stockGetStocks**](doc/StockApi.md#stockgetstocks) | **GET** /api/app/stock/stocks | 
+[*StockApi*](doc/StockApi.md) | [**stockGetStockList**](doc/StockApi.md#stockgetstocklist) | **GET** /api/app/stock/stock-list | 
 
 
 ## Documentation For Models

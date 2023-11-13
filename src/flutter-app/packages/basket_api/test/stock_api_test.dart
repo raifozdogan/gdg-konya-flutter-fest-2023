@@ -7,8 +7,8 @@ void main() {
   final instance = BasketApi().getStockApi();
 
   group(StockApi, () {
-    //Future<ApiResultListOfStockDto> stockGetStocks({ String criteriaStr }) async
-    test('test stockGetStocks', () async {
+    //Future<ApiResultListOfStockDto> stockGetStockList({ String criteriaStr }) async
+    test('test stockGetStockList', () async {
       // TODO
     });
 

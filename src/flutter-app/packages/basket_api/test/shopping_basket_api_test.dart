@@ -12,6 +12,11 @@ void main() {
       // TODO
     });
 
+    //Future<ApiResultOfBasketDto> shoppingBasketClearBasket() async
+    test('test shoppingBasketClearBasket', () async {
+      // TODO
+    });
+
     //Future<ApiResultOfBasketDto> shoppingBasketCreateBasketItem({ BasketItemCreateDto basketItemCreateDto }) async
     test('test shoppingBasketCreateBasketItem', () async {
       // TODO

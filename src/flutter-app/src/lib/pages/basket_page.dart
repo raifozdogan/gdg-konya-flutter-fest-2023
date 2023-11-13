@@ -32,6 +32,12 @@ class BasketPage extends StatelessWidget {
           icon: const Icon(Iconsax.arrow_left),
           onPressed: () => AppRoutes.pop(),
         ),
+        actions: [
+          IconButton(
+            icon: const Icon(Iconsax.trash),
+            onPressed: () => locator<BasketStore>().clearBasket(),
+          ),
+        ],
       );
 
   Widget get BasketItemList {

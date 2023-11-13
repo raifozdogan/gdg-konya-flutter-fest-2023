@@ -9,11 +9,11 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**stockGetStocks**](StockApi.md#stockgetstocks) | **GET** /api/app/stock/stocks | 
+[**stockGetStockList**](StockApi.md#stockgetstocklist) | **GET** /api/app/stock/stock-list | 
 
 
-# **stockGetStocks**
-> ApiResultListOfStockDto stockGetStocks(criteriaStr)
+# **stockGetStockList**
+> ApiResultListOfStockDto stockGetStockList(criteriaStr)
 
 
 
@@ -27,10 +27,10 @@ final api = BasketApi().getStockApi();
 final String criteriaStr = criteriaStr_example; // String | 
 
 try {
-    final response = api.stockGetStocks(criteriaStr);
+    final response = api.stockGetStockList(criteriaStr);
     print(response);
 } catch on DioException (e) {
-    print('Exception when calling StockApi->stockGetStocks: $e\n');
+    print('Exception when calling StockApi->stockGetStockList: $e\n');
 }
 ```
 

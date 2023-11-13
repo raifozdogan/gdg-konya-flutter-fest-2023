@@ -18,7 +18,7 @@ class StockApi {
 
   const StockApi(this._dio, this._serializers);
 
-  /// stockGetStocks
+  /// stockGetStockList
   /// 
   ///
   /// Parameters:
@@ -32,7 +32,7 @@ class StockApi {
   ///
   /// Returns a [Future] containing a [Response] with a [ApiResultListOfStockDto] as data
   /// Throws [DioException] if API call or serialization fails
-  Future<Response<ApiResultListOfStockDto>> stockGetStocks({ 
+  Future<Response<ApiResultListOfStockDto>> stockGetStockList({ 
     String? criteriaStr,
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
@@ -41,7 +41,7 @@ class StockApi {
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
-    final _path = r'/api/app/stock/stocks';
+    final _path = r'/api/app/stock/stock-list';
     final _options = Options(
       method: r'GET',
       headers: <String, dynamic>{

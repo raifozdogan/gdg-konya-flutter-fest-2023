@@ -17,7 +17,7 @@ public class StockAppService : ApplicationService, IStockAppService
         _stockRepo = stockRepo;
     }
 
-    public virtual async Task<ApiResultList<StockDto>> GetStocksAsync(StockFilterDto filterDto)
+    public virtual async Task<ApiResultList<StockDto>> GetStockListAsync(StockFilterDto filterDto)
     {
         var qry = await _stockRepo.GetQueryableAsync();
         

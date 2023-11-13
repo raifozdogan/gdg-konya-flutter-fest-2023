@@ -119,13 +119,13 @@ public class ShoppingBasketAppService : ApplicationService, IBasketAppService
         return ApiResult.CreateSuccess(dto);
     }
 
-    // public async Task<ApiResult<BasketDto>> ClearBasketAsync()
-    // {
-    //     var basket = await GetCurrentBasketAsync();
-    //     basket.Items.Clear();
-    //     await _basketRepo.UpdateAsync(basket);
-    //     
-    //     var dto = ObjectMapper.Map<Basket, BasketDto>(basket);
-    //     return ApiResult.CreateSuccess(dto);
-    // }
+    public async Task<ApiResult<BasketDto>> ClearBasketAsync()
+    {
+        var basket = await GetCurrentBasketAsync();
+        basket.Items.Clear();
+        await _basketRepo.UpdateAsync(basket);
+        
+        var dto = ObjectMapper.Map<Basket, BasketDto>(basket);
+        return ApiResult.CreateSuccess(dto);
+    }
 }

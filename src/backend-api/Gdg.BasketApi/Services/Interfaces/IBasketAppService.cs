@@ -8,5 +8,5 @@ public interface IBasketAppService
     Task<ApiResult<BasketDto>> CreateBasketItemAsync(BasketItemCreateDto basketItemCreateDto);
     Task<ApiResult<BasketDto>> DeleteBasketItemAsync(Guid basketItemId, bool deleteAll = false);
     Task<ApiResult<BasketDto>> CheckoutAndGetNewBasketAsync();
-    // Task<ApiResult<BasketDto>> ClearBasketAsync();
+    Task<ApiResult<BasketDto>> ClearBasketAsync();
 }

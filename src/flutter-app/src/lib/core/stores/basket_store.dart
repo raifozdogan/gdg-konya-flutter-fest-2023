@@ -81,4 +81,17 @@ abstract class BasketStoreBase with Store {
 
     return Future.value();
   }
+
+  Future<void> clearBasket() async {
+    var request = BasketApiHelper.shoppingBasketApi
+        .shoppingBasketClearBasket()
+        .catchError((err) {
+      print(err);
+      throw err;
+    });
+
+    basket = (await request).data?.data;
+
+    return Future.value();
+  }
 }

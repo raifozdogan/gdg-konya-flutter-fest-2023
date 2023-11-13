@@ -12,7 +12,7 @@ abstract class StockStoreBase with Store {
 
   Future<void> getStockList({String? searchKey}) async {
     var request = BasketApiHelper.stockApi
-        .stockGetStocks(criteriaStr: searchKey)
+        .stockGetStockList(criteriaStr: searchKey)
         .catchError((err) {
       print(err);
       throw err;
